@@ -28,7 +28,9 @@ I'd like to create a video game controller consisting of a joystick and at least
 
 
 #### Sketch
-
+<html>
+<img src="https://github.com/BeccaHa/Digits2018/blob/master/Drawing.jpg">
+</html>
 
 #### Resources
 
