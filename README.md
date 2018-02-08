@@ -23,6 +23,10 @@ PIR Sensors: detects motion, or whether or not a person has moved into range. "P
 
 I'd like to create a video game controller consisting of a joystick and at least two buttons. It will be held in one hand, with the thumb operating the joystick, and the index and middle finger operating the buttons, and it will make use of the Unojoy code library to be able to operate in Windows. Hopefully, I'll be able to use this to play a game involving minimal inputs. 
 
+#### Super Rough Schematic
+
+#### Sketch
+
 #### Resources
 
 Unojoy is a code library which assists in making the Arduino Uno into a game controller. Below is an example of it at work, followed by the code database.
