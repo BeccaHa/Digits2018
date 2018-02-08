@@ -25,7 +25,10 @@ I'd like to create a video game controller consisting of a joystick and at least
 
 #### Super Rough Schematic
 
+
+
 #### Sketch
+
 
 #### Resources
 
