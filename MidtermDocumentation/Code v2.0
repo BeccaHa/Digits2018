@@ -1,0 +1,84 @@
+#include <Keyboard.h>
+
+void setup() {
+  // make pin 2 an input and turn on the
+  // pullup resistor so it goes high unless
+  // connected to ground:
+
+  //int IRval = 0;
+
+  pinMode(0,OUTPUT); // IR sensor, analog
+  pinMode(2, INPUT_PULLUP); //button left
+  //pinMode(3, INPUT_PULLUP); //button middle
+  pinMode(4, INPUT_PULLUP); //button right
+
+  
+  pinMode(6, OUTPUT); // YellowL
+  pinMode(7, OUTPUT); // YellowR
+  pinMode(8, OUTPUT); // Green
+  pinMode(9, OUTPUT); // Red
+  // initialize control over the keyboard:
+  Keyboard.begin();
+  
+  //something about the IR sensor... ports
+  Serial.begin(9600);
+}
+
+void loop() { 
+  
+  //IR sensor
+  
+  int IRval = analogRead(0);    // reads the value of the sharp sensor
+  Serial.println(IRval);            // prints the value of the sensor to the serial monitor 
+
+  if (IRval > 390) {
+    //light stuff
+    digitalWrite(6, HIGH);  
+    delay(50);
+    digitalWrite(6, LOW);
+
+    //keyboard stuff
+    Keyboard.print("s");
+    //delay(200); 
+    Keyboard.release("s");
+    
+  } else if(IRval < 391 && IRval > 100) {
+    //light stuff
+    digitalWrite(7, HIGH);
+    delay(50);
+    digitalWrite(7,LOW);
+
+    //keyboard stuff
+    Keyboard.print("w");
+    //delay(200);
+    Keyboard.release("w");
+  }
+  //buttons
+  if (digitalRead(2) == HIGH) {
+    //Send the message
+    digitalWrite(8, HIGH);
+    Keyboard.print("a");
+    //delay(200);
+    digitalWrite(8, LOW);
+    Keyboard.release("a");
+    digitalRead(2) == LOW;
+  }
+ /* if (digitalRead(3) == HIGH) {
+    //Send the message
+    //Keyboard.print("w");
+    digitalWrite(8, HIGH);
+    delay(200);
+    digitalWrite(8, LOW);
+    //Keyboard.release("w");
+ } */
+  if (digitalRead(4) == HIGH) {
+    //Send the message
+    digitalWrite(9,HIGH);
+    Keyboard.print("d");
+    //delay(200);
+    digitalWrite(9,LOW);
+    Keyboard.release("d");
+    digitalRead(4) == LOW; 
+  }
+  delay(10);
+}
