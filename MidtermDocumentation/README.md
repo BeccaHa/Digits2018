@@ -32,6 +32,10 @@ https://youtu.be/s5Q6xCMRqAU
 
 ### Wiring diagrams
 
+<html>
+<img src="https://github.com/BeccaHa/Digits2018/blob/master/MidtermDocumentation/GameControlv2.0_bb.jpg">
+</html>
+
 
 ### Next steps
 
