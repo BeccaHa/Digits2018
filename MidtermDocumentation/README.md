@@ -9,3 +9,8 @@ I finally found that there are a handful of arduino boards that already can work
 
 After initial testing, done with three buttons meant to type a, w, and s ( the right, forward, and left controls on a keyboard based game), I made the mistake of not turning off the output in the code, causing an endless loop of letters to spill out whenever I had the arduino plugged in. AFter finally getting the timing right to reset the board, I instead attached the buttons to lights to make sure they turned off afterwards. Then I introduced the actual keyboard functionality with success.
 
+#### three button set-up
+
+<html>
+<img src="https://github.com/BeccaHa/Digits2018/MidtermDocumentation/IMG-9839.JPG">
+ </html>
