@@ -13,5 +13,5 @@ After initial testing, done with three buttons meant to type a, w, and s ( the r
 
 
 <html>
-<img src="https://github.com/BeccaHa/Digits2018/MidtermDocumentation/IMG-9839.JPG">
+<img src="https://github.com/BeccaHa/Digits2018/MidtermDocumentation/threeButtonDoc.JPG">
 </html>
